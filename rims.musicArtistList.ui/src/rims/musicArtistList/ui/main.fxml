@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Created By ScarletCoder7-->
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ProgressBar?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="rims.musicArtistList.ui.Controller" minWidth="-Infinity" minHeight="-Infinity" maxWidth="-Infinity" maxHeight="-Infinity" prefWidth="600.0" prefHeight="400.0" >
+ <center>
+<TableView fx:id="artistTable" prefWidth="200.0" prefHeight="200.0" BorderPane.alignment="CENTER">
+<columns>
+<TableColumn prefWidth="${artistTable.width}" text="Name">
+<cellValueFactory>
+<PropertyValueFactory property="name" />
+</cellValueFactory>
+</TableColumn>
+</columns>
+<BorderPane.margin>
+<Insets right = "10.0"/>
+</BorderPane.margin>
+</TableView>
+</center>
+	<!-- TODO Add Nodes -->
+	<right>
+	<VBox alignment="CENTER" BorderPane.alignment="CENTER_RIGHT" spacing="10.0">
+	<children>
+	<Button maxWidth="Infinity" text="View Artist List" onAction="#listArtists" />
+	<Button maxWidth="Infinity" text="View Albums(Artist)" onAction= "#listAlbumsByArtists" />
+	<Button maxWidth="Infinity" text="Update Artist" onAction="#updateArtist" />
+	</children>
+	<BorderPane.margin>
+<Insets right = "10.0"/>
+</BorderPane.margin>
+	</VBox>
+	</right>
+	
+	<bottom>
+	<HBox alignment="CENTER" BorderPane.alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+	<children>
+	<ProgressBar visible="true" fx:id="progressBar"  prefWidth="300.0"/>
+	</children>
+	</HBox>
+	</bottom>
+</BorderPane>
+

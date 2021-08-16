@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MusicDatabase_With_JavaFX.iml" filepath="$PROJECT_DIR$/MusicDatabase_With_JavaFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rims.musicArtistList.common/rims.musicArtistList.common.iml" filepath="$PROJECT_DIR$/rims.musicArtistList.common/rims.musicArtistList.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rims.musicArtistList.db/rims.musicArtistList.db.iml" filepath="$PROJECT_DIR$/rims.musicArtistList.db/rims.musicArtistList.db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rims.musicArtistList.ui/rims.musicArtistList.ui.iml" filepath="$PROJECT_DIR$/rims.musicArtistList.ui/rims.musicArtistList.ui.iml" />
+    </modules>
+  </component>
+</project>
